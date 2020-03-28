@@ -226,7 +226,7 @@ module.exports = function (RED)
 		const options = 
 		{
 			i2c: i2cBus.openSync(1), 
-			address: 0x6f, //settable
+			address: config.address,
 			frequency: 120, 
 			debug: false
 		}
